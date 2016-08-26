@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!--  <settings>指定了数据库操作相关的设置  -->
+	<!--<settings>
+		<setting name="cacheEnabled" value="true"/>
+		<setting name="lazyLoadingEnabled" value="true"/>
+		<setting name="multipleResultSetsEnabled" value="true"/>
+		<setting name="useColumnLabel" value="true"/>
+		<setting name="useGeneratedKeys" value="false"/>
+		<setting name="autoMappingBehavior" value="PARTIAL"/>
+		<setting name="defaultExecutorType" value="SIMPLE"/>
+		<setting name="defaultStatementTimeout" value="25"/>
+		<setting name="safeRowBoundsEnabled" value="false"/>
+		<setting name="mapUnderscoreToCamelCase" value="false"/>
+		<setting name="localCacheScope" value="SESSION"/>
+		<setting name="jdbcTypeForNull" value="OTHER"/>
+		<setting name="lazyLoadTriggerMethods" value="equals,clone,hashCode,toString"/>
+	</settings>-->
+	<!-- typeAliases指定了可以给数据库表对应的类所在的包路径，可以在sql的xml使用它们的别名
+	 @Alias("Blogger")注解了该pojo的别名，所以可以在xml文件中使用别名 Blogger 来代替：com.frank.entity.Blogger
+	 这里 resultType="Blogger" 不需要使用全限定类名。<cache />启用了基于namespace="com.frank.dao.BloggerDao"的全局缓存。
+	 不过直接写包名com.frank.entity，就不用写 @Alias("Blogger")注解了，SQLXML中默认规则是类名相同就可以映射
+	 -->
+	<typeAliases>
+		<package name="com.frank.entity"/>
+	</typeAliases>
+</configuration>
