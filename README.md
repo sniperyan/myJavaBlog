@@ -26,7 +26,6 @@ IDEA14 + MAVEN3 + JDK7 + TOMCAT8
 3.shiro做权限管理，登录验证，配置简单
 4.使用lucene做全文检索
 5.后台管理页面用的easyui，前台bootstrap，富文本用的ueditor
-6.富文本使用百度的ueeditor
-7.实现spring ApplicationContextAware接口，在容器启动的时候初始化配置，优化性能
+6.实现spring ApplicationContextAware接口，在容器启动的时候初始化配置，优化性能
 ```
 
